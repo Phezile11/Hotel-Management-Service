@@ -38,6 +38,7 @@ class _LaundryAndCleaningState extends State<LaundryAndCleaning> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.green,
         title: const Text("Laundry And Cleaning"),
         centerTitle: true,
       ),
@@ -144,9 +145,11 @@ class _LaundryAndCleaningState extends State<LaundryAndCleaning> {
               height: 40.0,
             ),
             ElevatedButton(
+
                 onPressed: () {},
                 child: const Text("Submit"),
                 style: ElevatedButton.styleFrom(
+                  primary: Colors.green,
                   minimumSize: const Size.fromHeight(
                       40), // fromHeight use double.infinity as width and 40 is the height
                 ))

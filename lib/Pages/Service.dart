@@ -13,6 +13,7 @@ class _ServiceState extends State<Service> {
     String title = ModalRoute.of(context)!.settings.arguments as String;
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.green,
         title: Text(title),
         centerTitle: true,
         elevation: 0,
@@ -42,6 +43,7 @@ class _ServiceState extends State<Service> {
                 onPressed: () {},
                 child: Text("Submit"),
                 style: ElevatedButton.styleFrom(
+                  primary: Colors.green,
                   minimumSize: Size.fromHeight(
                       40), // fromHeight use double.infinity as width and 40 is the height
                 ))
